@@ -1,3 +1,5 @@
-torch
-openai-whisper
-pytest
+torch==2.3.1
+openai-whisper==1.1.10
+pytest==8.3.3
+numpy==1.26.4
+'git+https://github.com/hc-sc-ocdo-bdpd/file-processing-test-data.git@main'
