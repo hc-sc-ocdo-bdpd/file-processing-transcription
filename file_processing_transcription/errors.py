@@ -1,10 +1,18 @@
 class TranscriptionError(Exception):
-    """Base exception for transcription related issues."""
-
+    """Base exception for transcription-related issues in the file-processing-transcription library."""
 
 class TranscriptionProcessingError(TranscriptionError):
-    """Raised when there's an issue during transcription processing."""
+    """
+    Exception raised when an issue occurs during transcription processing.
 
+    This could be due to file format issues, processing errors, or issues
+    with the transcription model.
+    """
 
 class NotTranscriptionApplicableError(TranscriptionError):
-    """Raised when attempting transcription on a file type that doesn't support it."""
+    """
+    Exception raised when transcription is attempted on a file type that does not support it.
+
+    This error is useful for indicating that the file type does not contain
+    audio or video content suitable for transcription.
+    """
