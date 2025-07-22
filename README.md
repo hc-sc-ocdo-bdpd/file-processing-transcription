@@ -32,6 +32,20 @@ pip install -r requirements.txt
 
 All required packages, including Whisper, are listed in the `requirements.txt` file.
 
+**Note**: `ffmpeg` must be installed on your system for Whisper to process audio and video files. You can install it using the following command:
+
+```bash
+sudo apt-get update && sudo apt-get install -y ffmpeg
+```
+
+On macOS with Homebrew:
+
+```bash
+brew install ffmpeg
+```
+
+For Windows, download from [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html) and follow the installation instructions.
+
 ---
 
 ## Contributing
